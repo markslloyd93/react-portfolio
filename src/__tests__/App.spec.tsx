@@ -1,10 +1,10 @@
 import "@testing-library/jest-dom";
-import { render, screen, fireEvent } from "@testing-library/react";
-import App from "../App";
+import { render, screen } from "@testing-library/react";
+import HomePage from "../pages/HomePage";
 
 describe("Work Card", () => {
   it("renders without crashing", () => {
-    render(<App />);
+    render(<HomePage />);
     expect(screen.getByTestId("cardSection")).toBeInTheDocument();
   });
 });

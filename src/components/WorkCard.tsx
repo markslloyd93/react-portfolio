@@ -2,7 +2,7 @@ interface Props {
   cardTitle: string;
   cardDescription: string;
   cardTags: string[];
-  websiteUrl: string;
+  websiteUrl?: string;
   repository: string;
 }
 function WorkCard({
@@ -24,13 +24,16 @@ function WorkCard({
         ))}
       </ul>
       <div className="flex items-center gap-2.5">
-        <a
-          href={websiteUrl}
-          target="_blank"
-          className="font-interSemiBold text-brand-blue font-medium hover:underline focus:underline"
-        >
-          view website
-        </a>
+        {websiteUrl && (
+          <a
+            href={websiteUrl}
+            target="_blank"
+            className="font-interSemiBold text-brand-blue font-medium hover:underline focus:underline"
+          >
+            view website
+          </a>
+        )}
+
         <a
           href={repository}
           target="_blank"

@@ -11,6 +11,7 @@ function HomePage() {
     "dashboard for Decide employees to easily access resources based on their department";
   const addressTrackerCardDesc =
     "A tracking tool built with JavaScript, that allows the user to track the location & service provider of an IP address";
+
   return (
     <>
       <Header />
@@ -60,9 +61,8 @@ function HomePage() {
           <WorkCard
             cardTitle="IP Address Tracker"
             cardDescription={addressTrackerCardDesc}
-            cardTags={["C#", ".NET 8", "Umbraco"]}
-            websiteUrl="https://chicagotown.com/"
-            repository="https://gitlab.com/DecideDigital/chicagotown13"
+            cardTags={["JavaScript"]}
+            repository="https://github.com/markslloyd93/ip-address-tracker"
           />
         </section>
       </section>
